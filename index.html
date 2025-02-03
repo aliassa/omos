@@ -103,21 +103,24 @@
     <section id="contact" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center mb-4">Contact Us</h2>
-            <form>
+            <form id="contact-form" action="https://formspree.io/f/mqaebwyb" method="POST">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <p id="success-message" style="display: none; color: green; margin-top: 10px;">Thank you! Your message
+                    has been sent.</p>
             </form>
+
         </div>
     </section>
 
@@ -131,6 +134,29 @@
     <script>
         AOS.init();
     </script>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: { "Accept": "application/json" }
+            });
+
+            if (response.ok) {
+                document.getElementById("success-message").style.display = "block"; // Show success message
+                form.reset(); // Clear form
+            } else {
+                alert("Oops! Something went wrong, please try again.");
+            }
+        });
+    </script>
+
 </body>
 
 </html>
