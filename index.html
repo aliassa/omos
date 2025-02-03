@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMOS - Oilfield Maintenance and Operations Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         .hero-section {
-            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            background: url('images/hero.jpg') no-repeat center center/cover;
             color: white;
             padding: 100px 0;
         }
 
         .service-card {
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -43,7 +45,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section text-center">
+    <section id="home" class="hero-section text-center" data-aos="fade-up">
         <div class="container">
             <h1 class="display-4">Welcome to OMOS</h1>
             <p class="lead">Your trusted partner in oilfield maintenance and operations.</p>
@@ -52,7 +54,7 @@
     </section>
 
     <!-- About Us -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center mb-4">About Us</h2>
             <p class="text-center">OMOS is a leading provider of oilfield maintenance and operations services,
@@ -63,10 +65,11 @@
     <!-- Services -->
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Our Services</h2>
+            <h2 class="text-center mb-4" data-aos="fade-up">Our Services</h2>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right">
                     <div class="card service-card">
+                        <img src="images/maintenance.jpg" class="card-img-top" alt="Maintenance Services">
                         <div class="card-body">
                             <h5 class="card-title">Maintenance Services</h5>
                             <p class="card-text">We provide top-notch maintenance solutions to keep your operations
@@ -74,16 +77,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="card service-card">
+                        <img src="images/operations.jpg" class="card-img-top" alt="Operations Support">
                         <div class="card-body">
                             <h5 class="card-title">Operations Support</h5>
                             <p class="card-text">Our team ensures seamless operations with 24/7 support.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left">
                     <div class="card service-card">
+                        <img src="images/consulting.jpg" class="card-img-top" alt="Consulting">
                         <div class="card-body">
                             <h5 class="card-title">Consulting</h5>
                             <p class="card-text">Expert consulting services to optimize your oilfield operations.</p>
@@ -95,7 +100,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center mb-4">Contact Us</h2>
             <form>
@@ -122,6 +127,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
