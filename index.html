@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMOS - Oilfield Maintenance and Operations Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
+        .contact-bar {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-bar i {
+            margin-right: 5px;
+        }
+
         .hero-section {
             background: url('images/hero.jpg') no-repeat center center/cover;
             color: white;
@@ -26,6 +38,16 @@
 </head>
 
 <body>
+    <!-- Contact Info Bar -->
+    <div class="contact-bar bg-dark text-white text-center py-2">
+        <a href="tel:+21698000000" class="text-white text-decoration-none me-3">
+            <i class="fas fa-phone-alt"></i> +216 98 000 000
+        </a>
+        <a href="mailto:seifeddine@omos.com" class="text-white text-decoration-none">
+            <i class="fas fa-envelope"></i> seifeddine@omos.com
+        </a>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
@@ -48,7 +70,7 @@
     <section id="home" class="hero-section text-center" data-aos="fade-up">
         <div class="container">
             <h1 class="display-4">Welcome to OMOS</h1>
-            <p class="lead">Your trusted partner in oilfield maintenance and operations.</p>
+            <p class="lead">Your trusted partner in oilfield maintenance, construction, electrical work, and more.</p>
             <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
         </div>
     </section>
@@ -57,8 +79,10 @@
     <section id="about" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">OMOS is a leading provider of oilfield maintenance and operations services,
-                delivering excellence since 2023.</p>
+            <p class="text-center">OMOS provides comprehensive technical services in multiple industries. From oilfield
+                maintenance and operations to construction, electrical work, and gardening, we ensure high-quality
+                service tailored to our clients needs. We serve petroleum companies, commercial enterprises, and
+                residential clients, delivering excellence since 2023.</p>
         </div>
     </section>
 
@@ -72,8 +96,7 @@
                         <img src="images/maintenance.jpg" class="card-img-top" alt="Maintenance Services">
                         <div class="card-body">
                             <h5 class="card-title">Maintenance Services</h5>
-                            <p class="card-text">We provide top-notch maintenance solutions to keep your operations
-                                running smoothly.</p>
+                            <p class="card-text">Professional maintenance for oilfield and industrial operations.</p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +105,7 @@
                         <img src="images/operations.jpg" class="card-img-top" alt="Operations Support">
                         <div class="card-body">
                             <h5 class="card-title">Operations Support</h5>
-                            <p class="card-text">Our team ensures seamless operations with 24/7 support.</p>
+                            <p class="card-text">Ensuring smooth and efficient industrial operations 24/7.</p>
                         </div>
                     </div>
                 </div>
@@ -91,13 +114,43 @@
                         <img src="images/consulting.jpg" class="card-img-top" alt="Consulting">
                         <div class="card-body">
                             <h5 class="card-title">Consulting</h5>
-                            <p class="card-text">Expert consulting services to optimize your oilfield operations.</p>
+                            <p class="card-text">Expert consulting to optimize industrial and technical projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4" data-aos="fade-right">
+                    <div class="card service-card">
+                        <img src="images/construction.jpg" class="card-img-top" alt="Construction Work">
+                        <div class="card-body">
+                            <h5 class="card-title">Construction Work</h5>
+                            <p class="card-text">Professional construction and renovation services for all industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4" data-aos="fade-up">
+                    <div class="card service-card">
+                        <img src="images/electricity.jpg" class="card-img-top" alt="Electrical Services">
+                        <div class="card-body">
+                            <h5 class="card-title">Electrical Services</h5>
+                            <p class="card-text">Safe and efficient electrical installation, repair, and maintenance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4" data-aos="fade-left">
+                    <div class="card service-card">
+                        <img src="images/gardening.jpg" class="card-img-top" alt="Gardening Services">
+                        <div class="card-body">
+                            <h5 class="card-title">Gardening & Landscaping</h5>
+                            <p class="card-text">Beautiful and sustainable green spaces for homes and businesses.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Contact -->
     <section id="contact" class="py-5" data-aos="fade-up">
