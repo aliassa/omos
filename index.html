@@ -42,13 +42,39 @@
             padding: 100px 0;
         }
 
-        .service-card {
+        /* .service-card {
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        } */
+
+        /* Remove underline from links */
+        .card-link {
+            text-decoration: none;
+        }
+
+        /* Add hover effects to cards */
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            /* Slight lift effect */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            /* Subtle shadow for hover */
+            background-color: #f8f9fa;
+            /* Light background change on hover */
+        }
+
+        /* Optional: Add hover effect to text */
+        .service-card:hover .card-body {
+            background-color: #e9ecef;
+            /* Lighter background for the body on hover */
         }
     </style>
 </head>
