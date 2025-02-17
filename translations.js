@@ -1,27 +1,29 @@
+// translations.js
 const translations = {
-    "en": "us.json",
-    "ar": "ar.json",
-    "fr": "fr.json"
+    "en": "translations/us.json",
+    "fr": "translations/fr.json",
+    "es": "translations/ar.json"
 };
 
-function loadLanguage(lang) {
-    fetch(translations[lang])
+function loadLanguage(language) {
+    fetch(translations[language])
         .then(response => response.json())
         .then(data => {
-            document.querySelector('.navbar-brand').textContent = data.home;
-            document.querySelector('.nav-item a[href="#about"]').textContent = data.about;
-            document.querySelector('.nav-item a[href="#services"]').textContent = data.services;
-            document.querySelector('.nav-item a[href="#contact"]').textContent = data.contact;
-            document.querySelector('.hero-section h1').textContent = data.welcome_message;
-            document.querySelector('.hero-section p').textContent = data.subheading;
-            document.querySelector('.btn.btn-primary').textContent = data.explore_services;
-            document.querySelector('.text-center h2').textContent = data.about_us;
-            document.querySelector('.text-center p').textContent = data.about_paragraph;
-            // Add more elements as needed for full translation
-        });
+            document.querySelectorAll("[data-translate]").forEach(el => {
+                const key = el.getAttribute("data-translate");
+                if (data[key]) {
+                    el.innerHTML = data[key];
+                }
+            });
+        })
+        .catch(error => console.error("Error loading language file:", error));
 }
 
-// Event listener for language change
-document.querySelector('.language-switcher select').addEventListener('change', (e) => {
-    loadLanguage(e.target.value);
+function changeLanguage(language) {
+    loadLanguage(language);
+}
+
+// Set default language to English
+document.addEventListener('DOMContentLoaded', () => {
+    loadLanguage("en");
 });
