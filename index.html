@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEB51K8BMB"></script>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="styles.css">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -17,66 +19,6 @@
 
         gtag('config', 'G-EEB51K8BMB');
     </script>
-    <style>
-        .navbar-brand img {
-            height: 70px;
-            /* Adjust height */
-            max-width: 200px;
-            /* Optional width limit */
-        }
-
-        .contact-bar {
-            font-size: 14px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .contact-bar i {
-            margin-right: 5px;
-        }
-
-        .hero-section {
-            background: url('images/hero.jpg') no-repeat center center/cover;
-            color: white;
-            padding: 100px 0;
-        }
-
-        /* .service-card {
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        } */
-
-        /* Remove underline from links */
-        .card-link {
-            text-decoration: none;
-        }
-
-        /* Add hover effects to cards */
-        .service-card {
-            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-            cursor: pointer;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            /* Slight lift effect */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            /* Subtle shadow for hover */
-            background-color: #f8f9fa;
-            /* Light background change on hover */
-        }
-
-        /* Optional: Add hover effect to text */
-        .service-card:hover .card-body {
-            background-color: #e9ecef;
-            /* Lighter background for the body on hover */
-        }
-    </style>
 </head>
 
 <body>
@@ -107,15 +49,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <!-- <section id="home" class="hero-section text-center" data-aos="fade-up">
-        <div class="container">
-            <h1 class="display-4">Welcome to OMOS</h1>
-            <p class="lead">Your trusted partner in oilfield maintenance, construction, electrical work, and more.</p>
-            <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
-        </div>
-    </section> -->
 
     <section id="home" class="hero-section text-center" data-aos="fade-up">
         <div class="container">
@@ -270,19 +203,6 @@
             </div>
         </div>
     </section>
-
-    <style>
-        .field-work-image {
-            max-width: 100%;
-            /* Ensure the image doesn't stretch beyond its container */
-            height: 400px;
-            /* Set a fixed height for consistency */
-            object-fit: cover;
-            /* Maintain aspect ratio and avoid distortion */
-        }
-    </style>
-
-
     <script>
         // JavaScript to enable automatic sliding every 2 seconds
         var myCarousel = document.querySelector('#fieldWorkCarousel');
@@ -291,29 +211,6 @@
             ride: 'carousel' // Make sure the carousel starts sliding automatically
         });
     </script>
-
-
-    <!-- Add this CSS for hover effect -->
-    <style>
-        .client-logo {
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-            width: 200px;
-            /* Adjust as needed */
-            height: auto;
-            /* Smooth transition effect */
-        }
-
-        .client-logo:hover {
-            filter: grayscale(0%);
-        }
-
-        .logo-section {
-            background-color: #e1f5fe;
-            /* Light Blue */
-            padding: 30px;
-        }
-    </style>
 
     <!-- Contact -->
     <section id="contact" class="py-5" data-aos="fade-up">
