@@ -131,10 +131,11 @@
     <section id="about" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">OMOS provides comprehensive technical services in multiple industries. From oilfield
-                maintenance and operations to construction, electrical work, and gardening, we ensure high-quality
-                service tailored to our clients needs. We serve petroleum companies, commercial enterprises, and
-                residential clients, delivering excellence since 2023.</p>
+            <p class="text-center">OMOS offers a wide range of multi-technical services across various industries.
+                Specializing in oilfield maintenance, electrical, construction, mechanical work, and vehicle services,
+                we provide customized solutions designed to meet the specific needs of our clients. Serving petroleum
+                companies, commercial enterprises, and residential clients, OMOS has been delivering exceptional service
+                and expertise since 2023.</p>
         </div>
     </section>
 
@@ -207,6 +208,86 @@
         </div>
     </section>
 
+    <!-- Our Clients & Field Work -->
+    <!-- Our Clients & Field Work -->
+    <section id="clients" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Clients & Field Work</h2>
+
+            <!-- Client Logos -->
+            <div class="row text-center mb-5">
+                <div class="col-md-4">
+                    <img src="images/logo-omv.png" alt="Client 1 Logo" class="client-logo mb-2">
+                    <p>OMV</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Logo-ETPAK.png" alt="Client 2 Logo" class="client-logo mb-2">
+                    <p>ETPAK</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/client3-logo.png" alt="Client 3 Logo" class="client-logo mb-2">
+                    <p>Client 3</p>
+                </div>
+            </div>
+
+            <!-- Field Work Carousel -->
+            <div id="fieldWorkCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/field1.jpg" class="d-block w-100" alt="Field Work 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Oilfield Maintenance</h5>
+                            <p>Completed maintenance on oilfield equipment for Client 1, ensuring smooth operations.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/field2.jpg" class="d-block w-100" alt="Field Work 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Electrical Installation</h5>
+                            <p>Successfully completed electrical installations for Client 2's new oil rig setup.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/field3.jpg" class="d-block w-100" alt="Field Work 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Construction Project</h5>
+                            <p>Led the construction of new maintenance facilities for Client 3, improving operations
+                                efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#fieldWorkCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fieldWorkCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this CSS for hover effect -->
+    <style>
+        .client-logo {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        .client-logo:hover {
+            filter: grayscale(0%);
+        }
+
+        .logo-section {
+            background-color: #e1f5fe;
+            /* Light Blue */
+            padding: 30px;
+        }
+    </style>
 
     <!-- Contact -->
     <section id="contact" class="py-5" data-aos="fade-up">
