@@ -14,8 +14,16 @@
             max-width: 200px;
         }
 
-        .service-detail {
-            margin-top: 30px;
+        .hero {
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .service-card img {
+            height: 200px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -39,31 +47,56 @@
         </div>
     </nav>
 
-    <section class="service-detail">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h2 class="text-center mb-4">Maintenance Services</h2>
-            <p>Our company specializes in comprehensive mechanical and electrical maintenance solutions, ensuring
-                optimal performance, safety, and longevity across a diverse range of equipment and vehicles.</p>
+            <h1>Professional Maintenance Services</h1>
+            <p>Ensuring efficiency, safety, and longevity for your equipment and vehicles.</p>
+        </div>
+    </section>
 
-            <h4>1. Industrial Engines:</h4>
-            <p>We provide expert diagnostics, repair, and preventive maintenance for industrial engines, addressing
-                mechanical and electrical complexities to maximize efficiency and minimize downtime in demanding
-                operational environments.</p>
-
-            <h4>2. Trucks:</h4>
-            <p>Offering end-to-end maintenance services for commercial trucks, our team handles engine overhauls, brake
-                system inspections, electrical troubleshooting, and compliance checks to guarantee reliability for
-                logistics and transportation sectors.</p>
-
-            <h4>3. Power Generators:</h4>
-            <p>From installation to routine servicing, we ensure seamless operation of power generators. Our services
-                include load testing, fuel system maintenance, and emergency repairs to secure uninterrupted power
-                supply for residential, commercial, and industrial clients.</p>
-
-            <h4>4. Automotive Vehicles:</h4>
-            <p>Delivering precision maintenance for personal and commercial cars, we cover engine diagnostics,
-                electrical system repairs, and scheduled servicing to enhance vehicle safety, performance, and
-                compliance with manufacturer standards.</p>
+    <!-- Services Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                <div class="card service-card">
+                    <img src="images/engines.jpg" class="card-img-top" alt="Industrial Engines">
+                    <div class="card-body">
+                        <h5 class="card-title">Industrial Engines</h5>
+                        <p class="card-text">Expert diagnostics, repair, and preventive maintenance for industrial
+                            engines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                <div class="card service-card">
+                    <img src="images/trucks.jpg" class="card-img-top" alt="Trucks Maintenance">
+                    <div class="card-body">
+                        <h5 class="card-title">Trucks</h5>
+                        <p class="card-text">Comprehensive maintenance including engine overhauls and electrical
+                            troubleshooting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                <div class="card service-card">
+                    <img src="images/generator.jpg" class="card-img-top" alt="Power Generators">
+                    <div class="card-body">
+                        <h5 class="card-title">Power Generators</h5>
+                        <p class="card-text">Installation, servicing, and emergency repairs for uninterrupted power
+                            supply.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                <div class="card service-card">
+                    <img src="images/vehecul-maintenance.jpg" class="card-img-top" alt="Automotive Vehicles">
+                    <div class="card-body">
+                        <h5 class="card-title">Automotive Vehicles</h5>
+                        <p class="card-text">Precision maintenance, diagnostics, and scheduled servicing for cars.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
