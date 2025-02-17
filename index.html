@@ -208,21 +208,17 @@
         </div>
     </section>
 
-    <!-- Our Clients & Field Work -->
-    <!-- Our Clients & Field Work -->
     <section id="clients" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Our Clients & Field Work</h2>
 
             <!-- Client Logos -->
-            <div class="row text-center mb-5">
+            <div class="row text-center mb-5 client-section">
                 <div class="col-md-4">
-                    <img src="images/logo-omv.png" alt="Client 1 Logo" class="client-logo mb-2">
-                    <p>OMV</p>
+                    <img src="images/logo-omv.svg" alt="Client 1 Logo" class="client-logo mb-2">
                 </div>
                 <div class="col-md-4">
                     <img src="images/Logo-ETPAK.png" alt="Client 2 Logo" class="client-logo mb-2">
-                    <p>ETPAK</p>
                 </div>
                 <div class="col-md-4">
                     <img src="images/client3-logo.png" alt="Client 3 Logo" class="client-logo mb-2">
@@ -234,21 +230,21 @@
             <div id="fieldWorkCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/field1.jpg" class="d-block w-100" alt="Field Work 1">
+                        <img src="images/field1.jpg" class="d-block w-100 field-work-image" alt="Field Work 1">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Oilfield Maintenance</h5>
                             <p>Completed maintenance on oilfield equipment for Client 1, ensuring smooth operations.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/field2.jpg" class="d-block w-100" alt="Field Work 2">
+                        <img src="images/field2.jpg" class="d-block w-100 field-work-image" alt="Field Work 2">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Electrical Installation</h5>
                             <p>Successfully completed electrical installations for Client 2's new oil rig setup.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/field3.jpg" class="d-block w-100" alt="Field Work 3">
+                        <img src="images/field3.jpg" class="d-block w-100 field-work-image" alt="Field Work 3">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Construction Project</h5>
                             <p>Led the construction of new maintenance facilities for Client 3, improving operations
@@ -270,11 +266,36 @@
         </div>
     </section>
 
+    <style>
+        .field-work-image {
+            max-width: 100%;
+            /* Ensure the image doesn't stretch beyond its container */
+            height: 400px;
+            /* Set a fixed height for consistency */
+            object-fit: cover;
+            /* Maintain aspect ratio and avoid distortion */
+        }
+    </style>
+
+
+    <script>
+        // JavaScript to enable automatic sliding every 3 seconds
+        var myCarousel = document.querySelector('#fieldWorkCarousel');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 3000, // Set interval to 3 seconds
+            ride: 'carousel' // Make sure the carousel starts sliding automatically
+        });
+    </script>
+
+
     <!-- Add this CSS for hover effect -->
     <style>
         .client-logo {
             filter: grayscale(100%);
             transition: filter 0.3s ease;
+            width: 200px;
+            /* Adjust as needed */
+            height: auto;
             /* Smooth transition effect */
         }
 
