@@ -75,3 +75,66 @@
     object-fit: cover;
     /* Maintain aspect ratio and avoid distortion */
 }
+
+.language-switcher {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.language-switcher select {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.language-switcher select option {
+    background-color: #333;
+    color: white;
+}
+
+/* Language Switcher */
+/* .language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 3px 5px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.language-switcher:hover {
+    background-color: #e9ecef;
+    border-color: #bbb;
+}
+
+.language-switcher select {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    appearance: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    /* Ensures the font is consistent */
+}
+
+.language-switcher select:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* Option styling */
+.language-switcher select option {
+    font-size: 16px;
+    padding: 8px;
+}
+
+*/
