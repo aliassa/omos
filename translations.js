@@ -1,4 +1,3 @@
-// translations.js
 const translations = {
     "en": "translations/us.json",
     "fr": "translations/fr.json",
@@ -6,6 +5,9 @@ const translations = {
 };
 
 function loadLanguage(language) {
+    // Save selected language to localStorage
+    localStorage.setItem('language', language);
+
     fetch(translations[language])
         .then(response => response.json())
         .then(data => {
@@ -23,7 +25,11 @@ function changeLanguage(language) {
     loadLanguage(language);
 }
 
-// Set default language to English
+// Load saved language from localStorage or default to English
 document.addEventListener('DOMContentLoaded', () => {
-    loadLanguage("en");
+    const savedLanguage = localStorage.getItem('language') || "en";
+    loadLanguage(savedLanguage);
+
+    // Set the selected value in the dropdown based on the saved language
+    document.querySelector('select').value = savedLanguage;
 });
