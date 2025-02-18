@@ -53,5 +53,10 @@
     "new_construction": "New Construction",
     "new_construction_desc": "From foundation to finish, we create high-quality buildings.",
     "infrastructure": "Infrastructure",
-    "infrastructure_desc": "We build essential infrastructure with durability and precision."
+    "infrastructure_desc": "We build essential infrastructure with durability and precision.",
+    "contact_us": "Contact Us",
+    "contact_name": "Name",
+    "contact_email": "Email",
+    "contact_message": "Message",
+    "contact_submit": "Submit"
 }

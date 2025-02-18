@@ -53,5 +53,10 @@
     "new_construction": "Nouvelle Construction",
     "new_construction_desc": "Des fondations à la finition, nous créons des bâtiments de haute qualité.",
     "infrastructure": "Infrastructure",
-    "infrastructure_desc": "Nous construisons des infrastructures essentielles avec durabilité et précision."
+    "infrastructure_desc": "Nous construisons des infrastructures essentielles avec durabilité et précision.",
+    "contact_us": "Contactez-nous",
+    "contact_name": "Nom",
+    "contact_email": "E-mail",
+    "contact_message": "Message",
+    "contact_submit": "Envoyer"
 }
