@@ -58,5 +58,6 @@
     "contact_name": "الاسم",
     "contact_email": "البريد الإلكتروني",
     "contact_message": "الرسالة",
-    "contact_submit": "إرسال"
+    "contact_submit": "إرسال",
+    "last_about": "تقدم <span class='fw-bold text-primary'>شركات البترول</span>، <span class='fw-bold text-primary'>المؤسسات التجارية</span>، و <span class='fw-bold text-primary'>العملاء السكنيين</span>، حيث توفر OMOS <span class='fw-bold'>خدمة استثنائية وخبرة عالية</span> منذ عام 2022."
 }

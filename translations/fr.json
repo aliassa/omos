@@ -58,5 +58,6 @@
     "contact_name": "Nom",
     "contact_email": "E-mail",
     "contact_message": "Message",
-    "contact_submit": "Envoyer"
+    "contact_submit": "Envoyer",
+    "last_about": "Au service des <span class='fw-bold text-primary'>compagnies pétrolières</span>, des <span class='fw-bold text-primary'>entreprises commerciales</span> et des <span class='fw-bold text-primary'>clients résidentiels</span>, OMOS offre <span class='fw-bold'>un service exceptionnel et un savoir-faire de qualité</span> depuis 2022."
 }
