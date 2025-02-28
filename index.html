@@ -356,11 +356,12 @@
         </div>
     </section>
     <script>
-        // JavaScript to enable automatic sliding every 2 seconds
-        var myCarousel = document.querySelector('#fieldWorkCarousel');
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 2000, // Set interval to 2 seconds
-            ride: 'carousel' // Make sure the carousel starts sliding automatically
+        document.addEventListener("DOMContentLoaded", function () {
+            var myCarousel = document.getElementById('myCarousel');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 2000, // Set interval to 2 seconds
+                ride: 'carousel' // Make sure the carousel starts sliding automatically
+            });
         });
     </script>
 
@@ -422,6 +423,7 @@
             }
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="translations.js"></script>
 </body>
 
