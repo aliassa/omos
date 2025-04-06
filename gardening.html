@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="OMOS"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="OMOS"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-left">
                     <div class="card service-card shadow-sm">
-                        <img src="images/landscaping-sub.jpg" class="card-img-top field-work-image" alt="Landscaping">
+                        <img src="images/landscaping.jpg" class="card-img-top field-work-image" alt="Landscaping">
                         <div class="card-body text-center">
                             <i class="fa-solid fa-cogs fa-2x mb-2 text-warning"></i>
                             <h5 class="card-title">Landscaping</h5>
@@ -81,6 +81,64 @@
             </div>
         </div>
     </section>
+
+    <!-- Image Carousel -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Work in Pictures</h2>
+            <div id="gardeningCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/gardening.jpg" class="d-block w-100 rounded shadow" alt="Gardening Work 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening1.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening2.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening3.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening4.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening5.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening6.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening7.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening8.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 9">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening9.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 10">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening10.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 11">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gardening11.jpeg" class="d-block w-100 rounded shadow" alt="Gardening Work 12">
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#gardeningCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gardeningCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
@@ -93,6 +151,15 @@
         AOS.init();
     </script>
     <script src="translations.js"></script>
+
+    <script>
+        const carouselElement = document.querySelector('#gardeningCarousel');
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 3000, // Change slide every 3 seconds
+            ride: 'carousel'
+        });
+    </script>
+
 </body>
 
 </html>
