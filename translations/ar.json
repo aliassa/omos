@@ -59,5 +59,11 @@
     "contact_email": "البريد الإلكتروني",
     "contact_message": "الرسالة",
     "contact_submit": "إرسال",
-    "last_about": "تقدم <span class='fw-bold text-primary'>شركات البترول</span>، <span class='fw-bold text-primary'>المؤسسات التجارية</span>، و <span class='fw-bold text-primary'>العملاء السكنيين</span>، حيث توفر OMOS <span class='fw-bold'>خدمة استثنائية وخبرة عالية</span> منذ عام 2022."
+    "last_about": "تقدم <span class='fw-bold text-primary'>شركات البترول</span>، <span class='fw-bold text-primary'>المؤسسات التجارية</span>، و <span class='fw-bold text-primary'>العملاء السكنيين</span>، حيث توفر OMOS <span class='fw-bold'>خدمة استثنائية وخبرة عالية</span> منذ عام 2022.",
+    "manpower_title": "العمالة",
+    "manpower_text": "عمال مهرة وذو خبرة في مجالات مختلفة لدعم مشاريعكم الصناعية و الإنشائية.",
+    "rental_title": "إيجار المعدات",
+    "rental_text": "استأجر معدات وآلات البناء والصناعة عالية الجودة للمهام التي تتراوح من الحفر إلى أعمال التشطيب.",
+    "Rig_move_title": "التعبئة والتفريغ",
+    "Rig_move_text": "نقل جميع مواد ومعدات الشركة بأمان وكفاءة إلى الموقع المطلوب."
 }

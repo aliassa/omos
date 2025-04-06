@@ -59,5 +59,11 @@
     "contact_email": "Email",
     "contact_message": "Message",
     "contact_submit": "Submit",
-    "last_about": "Serving <span class='fw-bold text-primary'>petroleum companies</span>, <span class='fw-bold text-primary'>commercial enterprises</span>, and <span class='fw-bold text-primary'>residential clients</span>, OMOS has been delivering <span class='fw-bold'>exceptional service and expertise</span> since 2022."
+    "last_about": "Serving <span class='fw-bold text-primary'>petroleum companies</span>, <span class='fw-bold text-primary'>commercial enterprises</span>, and <span class='fw-bold text-primary'>residential clients</span>, OMOS has been delivering <span class='fw-bold'>exceptional service and expertise</span> since 2022.",
+    "manpower_title": "Manpower",
+    "manpower_text": "Skilled and experienced workers across various fields to support your industrial and construction projects.",
+    "rental_title": "Material rental",
+    "rental_text": "Rent high-quality construction and industrial machinery and tools for tasks ranging from excavation to finishing work.",
+    "Rig_move_title": "Mobilisation & Demobilisation",
+    "Rig_move_text": "Transporting all company materials and equipment safely and efficiently to the required location."
 }

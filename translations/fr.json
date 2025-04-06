@@ -59,5 +59,11 @@
     "contact_email": "E-mail",
     "contact_message": "Message",
     "contact_submit": "Envoyer",
-    "last_about": "Au service des <span class='fw-bold text-primary'>compagnies pétrolières</span>, des <span class='fw-bold text-primary'>entreprises commerciales</span> et des <span class='fw-bold text-primary'>clients résidentiels</span>, OMOS offre <span class='fw-bold'>un service exceptionnel et un savoir-faire de qualité</span> depuis 2022."
+    "last_about": "Au service des <span class='fw-bold text-primary'>compagnies pétrolières</span>, des <span class='fw-bold text-primary'>entreprises commerciales</span> et des <span class='fw-bold text-primary'>clients résidentiels</span>, OMOS offre <span class='fw-bold'>un service exceptionnel et un savoir-faire de qualité</span> depuis 2022.",
+    "manpower_title": "Main-d'œuvre",
+    "manpower_text": "Travailleurs qualifiés et expérimentés dans divers domaines pour soutenir vos projets industriels et de construction.",
+    "rental_title": "Location de matériel",
+    "rental_text": "Louez des machines et outils de construction et industriels de haute qualité pour des tâches allant de l'excavation aux travaux de finition.",
+    "Rig_move_title": "Mobilisation & Démobilisation",
+    "Rig_move_text": "Transport des matériaux et équipements de l'entreprise en toute sécurité et efficacité vers le lieu requis."
 }
